@@ -16,9 +16,11 @@ import { ChatWidget } from './components/ChatWidget';
 import { DemoIndicator } from './components/demo/DemoIndicator';
 import { ScrollToTop } from './components/ScrollToTop';
 
+const basename = import.meta.env.BASE_URL;
+
 export default function App() {
   return (
-    <BrowserRouter>
+    <BrowserRouter basename={basename}>
       <ScrollToTop />
       <Routes>
         {/* Public Routes */}
