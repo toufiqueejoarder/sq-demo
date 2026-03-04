@@ -3,7 +3,7 @@ import { FileText, Package, CheckCircle, Clock, TrendingUp } from 'lucide-react'
 import { useLeads, useDistributors, useProducts } from '../contexts/DemoStateContext';
 
 export function DistributorDashboard() {
-  const { leads, getLeadsByDistributor } = useLeads();
+  const { getLeadsByDistributor } = useLeads();
   const { getCurrentDistributor, currentDistributorId } = useDistributors();
   const { products } = useProducts();
 

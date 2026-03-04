@@ -3,7 +3,7 @@ import { MapContainer, TileLayer, Marker, Popup, useMap } from 'react-leaflet';
 import L from 'leaflet';
 import { MapPin, Phone, Mail, Building2, Package, Filter, List, Map as MapIcon } from 'lucide-react';
 import { useDistributors, useProducts } from '../contexts/DemoStateContext';
-import { divisionList, categoryList } from '../lib/mock-data';
+import { divisionList } from '../lib/mock-data';
 import type { BangladeshDivision, Distributor } from '../types';
 
 const bangladeshCenter: [number, number] = [23.8103, 90.4125];

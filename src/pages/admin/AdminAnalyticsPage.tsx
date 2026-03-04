@@ -3,8 +3,6 @@ import { Link } from 'react-router-dom';
 import {
   BarChart,
   Bar,
-  LineChart,
-  Line,
   PieChart,
   Pie,
   Cell,
@@ -213,7 +211,7 @@ export function AdminAnalyticsPage() {
               <XAxis type="number" tick={{ fontSize: 12 }} />
               <YAxis type="category" dataKey="name" tick={{ fontSize: 12 }} width={80} />
               <Tooltip 
-                formatter={(value, name, props) => [value, props.payload.fullName]}
+                formatter={(value, _name, props) => [value, props.payload.fullName]}
               />
               <Bar dataKey="products" radius={[0, 4, 4, 0]}>
                 {productsByCategoryData.map((entry, index) => (

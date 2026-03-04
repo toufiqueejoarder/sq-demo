@@ -2,12 +2,8 @@ import { useState } from 'react';
 import { Link } from 'react-router-dom';
 import {
   Settings,
-  RefreshCw,
-  Plus,
   Thermometer,
   Users,
-  Package,
-  FileText,
   Zap,
   AlertTriangle,
   CheckCircle,
@@ -28,7 +24,7 @@ import type { DemandLevel, UserRole } from '../types';
 export function DemoControlsPage() {
   const { state, actions } = useDemoState();
   const { demandLevel, currentRole, setDemandLevel, setRole, resetDemo, generateRandomLead } = useDemoControls();
-  const { leads, getLeadStats } = useLeads();
+  const { getLeadStats } = useLeads();
   const { products } = useProducts();
   const { distributors } = useDistributors();
 
